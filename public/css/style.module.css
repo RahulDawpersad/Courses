@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(16deg, #333333 0%, #333333 25%,transparent 25%, transparent 96%,#333333 96%, #333333 100%),linear-gradient(236deg, #333333 0%, #333333 53%,transparent 53%, transparent 59%,#333333 59%, #333333 100%),linear-gradient(284deg, #333333 0%, #333333 46%,transparent 46%, transparent 71%,#333333 71%, #333333 100%),linear-gradient(316deg, #333333 0%, #333333 26%,transparent 26%, transparent 49%,#333333 49%, #333333 100%),linear-gradient(90deg, #333333,#333333);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+}
+
+ul {
+    list-style-image: url('https://nsa40.casimages.com/img/2021/02/22/210222044032516304.png');
+    transform: translateX(15.5px);
+    text-align: left;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border: none;
+    border-radius: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Cards */
+
+h1 {
+    margin-bottom: 35px;
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
+}
+
+.Plus{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.card-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 29%;
+    max-width: 350px;
+    min-width: 240px;
+    background-color: #8a8a8a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 15px 0;
+    border-radius: 25px;
+    box-shadow: 0 10px 12px 3px rgba(0, 0, 0, .25), inset 0 0px 3px 1px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    cursor: default;
+    transition: transform .35s, width .35s;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.card:nth-child(1) {
+    background-image: linear-gradient(to bottom left, #E44D26, #E44D26);
+}
+.card:nth-child(2) {
+    background-image: linear-gradient(to bottom, #264de4, #264de4);
+}
+.card:nth-child(3) {
+    background-image: linear-gradient(to bottom right, #F3C714, #F3C714);
+}
+
+.card * {
+    text-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+.card hr {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+
+.offer-title {
+    font-size: 2em;
+}
+
+.offer-title, .buy {
+    text-transform: uppercase;
+}
+
+.card:not(.recommended-offer) {
+    margin-top: 45px;
+}
+
+.recommended-offer {
+    padding-top: 60px;
+    position: relative;
+}
+
+.recommended-offer::before {
+    line-height: 30px;
+    content: "";
+    position: absolute;
+    top: 17.5px;
+    width: 100%;
+    color: black;
+    background-color: white;
+    mix-blend-mode: screen;
+}
+
+.offer-price {
+    font-size: 4.2em;
+    position: relative;
+}
+
+.offer-price::before {
+    content: "";
+    font-size: .4em;
+    position: absolute;
+    top: 0;
+    right: 105%;
+    right: calc(100% + 7px);
+}
+
+.offer-price::after {
+    content: "";
+    font-size: .2em;
+    position: absolute;
+    bottom: 18px;
+    left: 105%;
+    left: calc(100% + 3px);
+}
+
+.buy {
+    color: black;
+    background-color: white;
+    mix-blend-mode: screen;
+    padding: 15px 30px;
+    border-radius: 1000px;
+}
+
+.offer-price, hr {
+    margin: 20px 0;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    margin-top: 60px;
+}
+
+footer a {
+    background-image: linear-gradient(to right, #ff5900, #eba41f);
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    transition: background-size .4s;
+}
+
+footer a:hover {
+    background-size: 100% 2px;
+    background-position: left bottom;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 85%;
+        margin: 15px 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .card {
+        width: 50%;
+    }
+    footer {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .card-container {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        min-width: 200px;
+    }
+}

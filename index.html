@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+    <script src="https://kit.fontawesome.com/655b3b7e45.js" crossorigin="anonymous"></script>
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="public/css/styles.css">
+
+    <title>Responsive Card Pricing</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My 3 Courses For You To Become A Successful Full-Stack Web Developer.</h1>
+    </div>
+
+    <section class="card container grid">
+        <div class="card__container grid">
+            <!--==================== CARD 1 ====================-->
+            <article class="card__content grid">
+                <header class="card__header">
+                    <!-- <div class="card__header-circle grid"> -->
+                    <!-- <img src="public/img/html-img.png" alt="" class="card__header-img"> -->
+                    <!-- </div> -->
+
+                    <div class="card_title_container">
+                        <h1 class="card__header-title html-css-js">HTML5 + CSS3 + Javascript</h1>
+                    </div>
+                    <span class="card__header-subtitle"></span>
+
+                </header>
+
+                <div class="pricing-container">
+                    <h1 class="pricing">R 350</h1>
+                    <span class="plus">
+                        +
+                    </span>
+                </div>
+
+                <ul class="card__list grid">
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description">Basics & Essentials PDF</p>
+                    </li>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description">Free Portfolio Website To Customize.</p>
+                    </li>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description">Free Web Hosting (Sub-Domain)</p>
+                    </li>
+                </ul>
+
+                <button class="card__button" id="btn-contact-one">Contact To Buy</button>
+            </article>
+
+            <!--==================== CARD 2 ====================-->
+            <article class="card__content grid card-two">
+                <header class="card__header">
+                    <!-- <div class="card__header-circle grid">
+                            <img src="public/img/react_logo.png" alt="" class="card__header-img">
+                        </div> -->
+
+                    <div class="react-title-wrap">
+                        <h1 class="card__header-title node-title react-title">Reactjs</h1>
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+
+                    <span class="card__header-subtitle"></span>
+
+                </header>
+
+                <div class="pricing-container">
+                    <h1 class="pricing">R 400</h1>
+                    <span class="plus">
+                        +
+                    </span>
+                </div>
+
+                <ul class="card__list grid">
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description">Basics & Essentials PDF</p>
+                    </li>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description">Free React.js Portfolio Website To Customize.</p>
+                    </li>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description">Free Web Hosting (Sub-Domain)</p>
+                    </li>
+                </ul>
+
+                <button class="card__button"  id="btn-contact-two">Contact To Buy</button>
+            </article>
+
+
+            <!--==================== CARD 3 ====================-->
+            <article class="card__content grid">
+                <header class="card__header">
+                    <!-- <div class="card__header-circle grid"> -->
+                    <!-- <img src="public/img/html-img.png" alt="" class="card__header-img"> -->
+                    <!-- </div> -->
+
+                    <div class="node-title-wrap">
+                        <h1 class="card__header-title node-title">Nodejs + MySQL</h1>
+                        <i class="fa-brands fa-node-js"></i>
+                        <h1 class="node-plus">+</h1>
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                </header>
+
+                <div class="pricing-container">
+                    <h1 class="pricing">R 450</h1>
+                    <span class="plus">
+                        +
+                    </span>
+                </div>
+
+                <ul class="card__list grid">
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description">Basics & Essentials PDF</p>
+                    </li>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description">Free Website To Customize.</p>
+                    </li>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description">Free Web Hosting (Sub-Domain)</p>
+                    </li>
+                </ul>
+                <button class="card__button" id="btn-contact-three">
+                    Contact To Buy
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <p>Contact Number: +27697020214</p>
+        <p>Email: designxfolio@gmail.com</p>
+    </div>
+
+
+
+    <footer class="footer">
+        <p>*Each book is converted and summarized into a PDF format</p>
+        <p>Contact <a href="https://www.rahuldawpersad.com">Rahul Dawpersad </a> for More Info!</p>
+    </footer>
+
+    <script>
+        let btnOne = document.getElementById('btn-contact-one');
+let btnTwo = document.getElementById('btn-contact-two');
+let btnThree = document.getElementById('btn-contact-three');
+
+btnOne.addEventListener('click', function(){
+    window.open('public/components/contact.html', 'blank');
+})
+
+btnTwo.addEventListener('click', function(){
+    window.open('public/components/contact.html', 'blank');
+})
+
+btnThree.addEventListener('click', function(){
+    window.open('public/components/contact.html', 'blank');
+})
+    </script>
+</body>
+
+</html>
